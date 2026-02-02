@@ -3,22 +3,26 @@
     <InputDefaultBindingsFixApplied>true</InputDefaultBindingsFixApplied>
     <ShowMenuFixApplied>true</ShowMenuFixApplied>
     <MenuUpdateVersion>0</MenuUpdateVersion>
-    <Volume>50</Volume>
-    <RecentFiles />
+    <Volume>80</Volume>
+    <RecentFiles>
+        <string>C:\Users\Games\Music\Music\69 You Say Run - Yuki Hayashi.mp3</string>
+        <string>C:\Users\Games\Downloads\Archive\Temp_Sus\zxx Vids xxz\AANIX_Chunni_2nd_trip_-_4k.mp4</string>
+        <string>C:\Users\Games\Music\Music\68 My Ex Web Browser (Original Soundtrack) - Chewkz.mp3</string>
+    </RecentFiles>
     <WindowLocation>
         <X>0</X>
         <Y>0</Y>
     </WindowLocation>
     <WindowPosition>
-        <X>959</X>
+        <X>960</X>
         <Y>515</Y>
     </WindowPosition>
     <WindowSize>
-        <Width>1107</Width>
-        <Height>623</Height>
+        <Width>1293</Width>
+        <Height>727</Height>
     </WindowSize>
-    <AudioDevice>auto</AudioDevice>
-    <ConfigEditorSearch>OSD</ConfigEditorSearch>
+    <AudioDevice />
+    <ConfigEditorSearch>vol</ConfigEditorSearch>
     <Mute>no</Mute>
     <StartupFolder />
 </AppSettings>
