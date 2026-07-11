@@ -5,7 +5,7 @@
 Copy `launch.vbs` to:
 
 ```
-C:\Users\Games\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\
+C:\Users\%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\
 ```
 
 Edit `launch.vbs` so it points to the location of `komorebi_autostart.ps1`.
