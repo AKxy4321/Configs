@@ -16,7 +16,7 @@ Copy the following to your Komorebi config directory (`%USERPROFILE%\AppData\Loc
 
 * `komorebi.json`
 * `applications.json`
-* `.config/`
+* `.config/whkdrc`
 
 ## Installation
 
