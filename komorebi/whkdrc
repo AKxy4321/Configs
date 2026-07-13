@@ -1,7 +1,7 @@
 .shell powershell
 
 alt + q                 : komorebic close
-alt + m                 : komorebic minimize
+alt + e                 : komorebic minimize
 
 # Move windows
 alt + left              : komorebic move left
@@ -11,8 +11,8 @@ alt + right             : komorebic move right
 
 # Manipulate windows
 alt + f                 : komorebic toggle-float
-alt + d                 : komorebic toggle-monocle
+alt + c                 : komorebic toggle-monocle
 
 # Layouts
 alt + x                 : komorebic flip-layout horizontal
-alt + c                 : komorebic flip-layout vertical
+alt + z                 : komorebic flip-layout vertical
