@@ -1,7 +1,7 @@
 .shell powershell
 
 alt + q                 : komorebic close
-alt + e                 : komorebic minimize
+alt + w                 : komorebic minimize
 
 # Move windows
 alt + left              : komorebic move left
