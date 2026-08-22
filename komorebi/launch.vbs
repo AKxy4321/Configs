@@ -1,1 +1,0 @@
-CreateObject("Wscript.Shell").Run "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ""C:\Asus\komorebi_autostart.ps1""", 0, False
