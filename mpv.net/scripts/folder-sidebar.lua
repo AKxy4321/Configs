@@ -1039,33 +1039,29 @@ local function rebuild_folder_playlist()
 
     rebuilding_playlist = true
 
-    -- playlist-clear keeps the currently playing file.
-    -- Append every other audio file exactly once.
-    mp.commandv("playlist-clear")
+    -- Keep the currently playing file in place while rebuilding the
+    -- playlist in exactly the same order as `songs`.
+    --
+    -- IMPORTANT:
+    -- Do NOT use playlist-clear + append here. playlist-clear keeps the
+    -- current entry, so appending the remaining files would produce:
+    --
+    --     current, 1, 2, 3, ..., previous, next, ...
+    --
+    -- That makes "Next" jump from the current song to the first song.
+    --
+    -- reorder_playlist_to_filenames() removes all non-current entries and
+    -- inserts them around the current entry in the requested order.
 
-    for _, filename in ipairs(songs) do
-        if filename ~= current_filename then
-            mp.commandv(
-                "loadfile",
-                utils.join_path(
-                    current_dir,
-                    filename
-                ),
-                "append"
-            )
-        end
+    local success = reorder_playlist_to_filenames(songs)
+
+    if success then
+        managed_dir = current_dir
+        apply_loop_mode()
     end
 
-    managed_dir = current_dir
-
-    -- The files are already in natural folder order. Do not run a second
-    -- full playlist permutation here; that used to remove and reinsert
-    -- every playlist entry and caused a noticeable first-load delay.
-
-    apply_loop_mode()
-
     rebuilding_playlist = false
-    return true
+    return success
 end
 
 ----------------------------------------------------------------------
